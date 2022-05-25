@@ -4,9 +4,8 @@ namespace ConsoleApp2
 {
     class Factorial
     {
-        
-        
-             static void Main(string[] args)
+      
+             static void Main1(string[] args)
             {
                 int i, fact = 1, number;
                 Console.Write("Enter any Number: ");
