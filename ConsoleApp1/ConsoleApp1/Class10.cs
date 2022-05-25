@@ -7,7 +7,7 @@ namespace ConsoleApp1
     class Transeposematrix
     {
 
-        public static void Main()
+        public static void Main11()
         {
             int i, j, m, n;
             int[,] arr1 = new int[30, 30];
