@@ -7,7 +7,7 @@ namespace ConsoleApp2
     class Class3
     {
         //out
-        static void Main(string[] args)
+        static void Main4(string[] args)
         {
            
             int result;
