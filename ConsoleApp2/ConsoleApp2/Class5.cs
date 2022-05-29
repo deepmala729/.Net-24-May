@@ -4,22 +4,6 @@ using System.Text;
 
 namespace ConsoleApp2
 {
-
-    //public
-    //protected
-    //internal
-    //private
-    //protected internal
-
-
-    //A class is a UDT that is composed of field data(member variables) and methods(member functions)
-    //that act on this data
-
-    /*<class> <name-of class>{}
-     * 
-     */
-    
-
     class employee
     {
         public string Name;
@@ -30,7 +14,7 @@ namespace ConsoleApp2
 
     class Class5
     {
-        static void Main(string[] args)
+        static void Main6(string[] args)
         {
             
 
