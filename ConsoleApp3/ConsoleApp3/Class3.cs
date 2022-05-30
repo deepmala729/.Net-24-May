@@ -31,7 +31,7 @@ namespace ConsoleApp3
     }
     class Class3
     {
-        public static void Main()
+        public static void Main4()
         {
             Calculatora calculatora1 = new Calculatora(15, 20);
             Calculatora calculatora2 = new Calculatora(20, 20);
