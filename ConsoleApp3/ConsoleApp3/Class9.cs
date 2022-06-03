@@ -36,7 +36,7 @@ namespace ConsoleApp3
     }
     class Class9
     {
-        public static void Main()
+        public static void Main10()
         {
             Car car = new Car(0);
             int fuel = Convert.ToInt32(Console.ReadLine());
