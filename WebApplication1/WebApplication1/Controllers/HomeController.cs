@@ -28,7 +28,34 @@ namespace WebApplication1.Controllers
             db.SaveChanges();
             return "Sucess";
         }
+        [HttpPut]
+        public string Put([FromBody] Tblsample tblsample)
+        {
+            SampleDBContext db = new SampleDBContext();
+            var tblsampleObj = db.Tblsamples.Where(x => x.Id == tblsample.Id);
+            if (tblsampleObj != null)
+            {
+                db.Tblsamples.Update(tblsample);
+                db.SaveChanges();
+                return "Success";
+            }
 
+            return "Fail";
+        }
+        [HttpDelete]
+        public string Delete([FromBody] int Id)
+        {
+            SampleDBContext db = new SampleDBContext();
+            var tblsampleObj = db.Tblsamples.Where(x => x.Id == Id).FirstOrDefault();
+            if (tblsampleObj != null)
+            {
+                db.Tblsamples.Remove(tblsampleObj);
+                db.SaveChanges();
+                return "Success";
+            }
+
+            return "Fail";
+        }
 
     }
 
