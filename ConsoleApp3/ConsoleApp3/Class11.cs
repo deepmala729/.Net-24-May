@@ -8,7 +8,7 @@ namespace ConsoleApp3
     //arraylist
     class Class11
     {
-        public static void Main()
+        public static void Main12()
         {
 
             ArrayList al = new ArrayList();
