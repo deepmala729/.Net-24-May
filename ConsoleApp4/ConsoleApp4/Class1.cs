@@ -16,7 +16,7 @@ namespace ConsoleApp4
                 Console.WriteLine(item.Id + " | " + item.Text);
             }
         }
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             SampleDBContext db = new SampleDBContext();
             bool Exit = false;

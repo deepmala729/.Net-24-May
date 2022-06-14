@@ -62,3 +62,4 @@ C:\Users\Deepmala Gupta\Desktop\.Net Training\ConsoleApp4\ConsoleApp4\obj\Debug\
 C:\Users\Deepmala Gupta\Desktop\.Net Training\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.pdb
 C:\Users\Deepmala Gupta\Desktop\.Net Training\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.genruntimeconfig.cache
+C:\Users\Deepmala Gupta\Desktop\.Net Training\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.AssemblyReference.cache

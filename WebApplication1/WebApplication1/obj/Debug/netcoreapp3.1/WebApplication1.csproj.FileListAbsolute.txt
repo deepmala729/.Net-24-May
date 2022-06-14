@@ -28,7 +28,11 @@ C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bi
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
@@ -52,6 +56,7 @@ C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\ob
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication1.StaticWebAssets.Manifest.cache
 C:\Users\Deepmala Gupta\Desktop\.Net Training\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication1.StaticWebAssets.xml
