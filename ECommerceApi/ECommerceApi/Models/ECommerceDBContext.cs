@@ -19,6 +19,7 @@ namespace ECommerceApi.Models
 
         public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<TblLogin> TblLogins { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -56,6 +57,15 @@ namespace ECommerceApi.Models
                     .HasColumnName("ProductID");
 
                 entity.Property(e => e.ProductName).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<TblLogin>(entity =>
+            {
+                entity.ToTable("TblLogin");
+
+                entity.Property(e => e.Password).HasMaxLength(50);
+
+                entity.Property(e => e.UserName).HasMaxLength(50);
             });
 
             modelBuilder.Entity<User>(entity =>

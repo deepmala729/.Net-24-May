@@ -66,4 +66,3 @@ C:\Users\Deepmala Gupta\Desktop\.Net Training\ECommerceApi\ECommerceApi\obj\Debu
 C:\Users\Deepmala Gupta\Desktop\.Net Training\ECommerceApi\ECommerceApi\obj\Debug\netcoreapp3.1\ECommerceApi.dll
 C:\Users\Deepmala Gupta\Desktop\.Net Training\ECommerceApi\ECommerceApi\obj\Debug\netcoreapp3.1\ECommerceApi.pdb
 C:\Users\Deepmala Gupta\Desktop\.Net Training\ECommerceApi\ECommerceApi\obj\Debug\netcoreapp3.1\ECommerceApi.genruntimeconfig.cache
-C:\Users\Deepmala Gupta\Desktop\.Net Training\ECommerceApi\ECommerceApi\obj\Debug\netcoreapp3.1\ECommerceApi.csproj.AssemblyReference.cache
