@@ -11,6 +11,10 @@ import { HomeComponent } from './home/home.component';
 import { AccountComponent } from './account/account.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
+import { OrderdetailsComponent } from './orderdetails/orderdetails.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { CartComponent } from './cart/cart.component';
     HomeComponent,
     AccountComponent,
     DashboardComponent,
-    CartComponent
+    CartComponent,
+    OrderdetailsComponent,
+    CheckoutComponent,
+    AdminComponent,
+    
   ],
   imports: [
     BrowserModule,
