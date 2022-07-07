@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Injectable()
 export class AuthService {
   private _registerUrl = "https://localhost:44342/api/Login/register";
@@ -27,5 +28,4 @@ export class AuthService {
   getUsers(){
     return this.http.get<any>(this._userUrl);
   }
-
 }

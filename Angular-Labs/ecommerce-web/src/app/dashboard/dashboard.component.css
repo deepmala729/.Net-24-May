@@ -1,0 +1,14 @@
+.row.content {
+    height: 550px
+  }
+
+  .sidenav {
+   
+    height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .row.content {
+      height: auto;
+    }
+  }

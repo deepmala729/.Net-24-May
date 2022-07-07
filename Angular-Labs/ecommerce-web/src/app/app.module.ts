@@ -11,9 +11,12 @@ import { HomeComponent } from './home/home.component';
 import { AccountComponent } from './account/account.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
-import { OrderdetailsComponent } from './orderdetails/orderdetails.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminComponent } from './admin/admin.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { CategoryComponent } from './category/category.component';
+import { OrderconfirmedComponent } from './orderconfirmed/orderconfirmed.component';
+
 
 
 @NgModule({
@@ -25,9 +28,12 @@ import { AdminComponent } from './admin/admin.component';
     AccountComponent,
     DashboardComponent,
     CartComponent,
-    OrderdetailsComponent,
     CheckoutComponent,
     AdminComponent,
+    UserDetailsComponent,
+    CategoryComponent,
+    OrderconfirmedComponent,
+ 
     
   ],
   imports: [

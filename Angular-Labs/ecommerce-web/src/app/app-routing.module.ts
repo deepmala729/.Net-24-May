@@ -9,7 +9,10 @@ import { RegisterComponent } from './register/register.component';
 import { CartComponent } from './cart/cart.component';
 import { AdminComponent } from './admin/admin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-import { OrderdetailsComponent } from './orderdetails/orderdetails.component';
+import { OrderconfirmedComponent } from './orderconfirmed/orderconfirmed.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { CategoryComponent } from './category/category.component';
+
 
 
 const routes: Routes = [
@@ -46,13 +49,23 @@ const routes: Routes = [
     path: 'checkout',
     component: CheckoutComponent
   },
-  {
-    path: 'orderdetails',
-    component: OrderdetailsComponent
-  },
+  
   {
     path:'admin',
     component:AdminComponent
+  },
+  {
+    path: 'orderconfirmed',
+    component: OrderconfirmedComponent
+  },
+  
+  {
+    path:'userdetails',
+    component:UserDetailsComponent
+  },
+  {
+    path: 'category',
+    component: CategoryComponent
   },
   
 ];
