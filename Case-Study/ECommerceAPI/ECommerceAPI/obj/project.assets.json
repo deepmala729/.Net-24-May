@@ -5971,11 +5971,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Deepmala Gupta\\Desktop\\.Net Training\\Case-Study\\ECommerceAPI\\ECommerceAPI\\ECommerceAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Deepmala Gupta\\OneDrive\\Desktop\\.Net Training\\Case-Study\\ECommerceAPI\\ECommerceAPI\\ECommerceAPI.csproj",
       "projectName": "ECommerceAPI",
-      "projectPath": "C:\\Users\\Deepmala Gupta\\Desktop\\.Net Training\\Case-Study\\ECommerceAPI\\ECommerceAPI\\ECommerceAPI.csproj",
+      "projectPath": "C:\\Users\\Deepmala Gupta\\OneDrive\\Desktop\\.Net Training\\Case-Study\\ECommerceAPI\\ECommerceAPI\\ECommerceAPI.csproj",
       "packagesPath": "C:\\Users\\Deepmala Gupta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Deepmala Gupta\\Desktop\\.Net Training\\Case-Study\\ECommerceAPI\\ECommerceAPI\\obj\\",
+      "outputPath": "C:\\Users\\Deepmala Gupta\\OneDrive\\Desktop\\.Net Training\\Case-Study\\ECommerceAPI\\ECommerceAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Deepmala Gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",

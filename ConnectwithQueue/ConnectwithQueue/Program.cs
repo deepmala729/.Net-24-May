@@ -13,7 +13,7 @@ namespace ConnectwithQueue
 
         public static void InsertMessage(string message)
         {
-            string connectionstring = "DefaultEndpointsProtocol=https;AccountName=levelupsolutions2;AccountKey=AreogH0tXgpK70H7oEJFB4PhIlwiZi0p+v1u+5aJQ6J6yZ1YR0VYKfTxh9ImneFAL48w9Py4x0rp+AStRMIVJg==;EndpointSuffix=core.windows.net";
+            string connectionstring = "DefaultEndpointsProtocol=https;AccountName=levelupsolutions7;AccountKey=FiSVbXke6LVIeL9akFTlTh4DL0qyagh4gBFuqBEwXu1E65ITfbXk8YvPjsV+fOZuRR8jt+Wik7hy+ASt8YoLZg==";
             QueueClient queueClient = new QueueClient(connectionstring, "sample-queue");
             queueClient.CreateIfNotExists();
             if (queueClient.Exists())
