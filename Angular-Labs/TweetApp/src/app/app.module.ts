@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,22 +10,34 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthService } from './services/auth.service';
 import { TweetComponent } from './tweet/tweet.component';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AccountComponent } from './account/account.component';
+import { SearchComponent } from './search/search.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharetweetComponent } from './sharetweet/sharetweet.component';
+import { JwtHelperService,JWT_OPTIONS } from '@auth0/angular-jwt';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    TweetComponent
+    TweetComponent,
+    DashboardComponent,
+    AccountComponent,
+    SearchComponent,
+    FilterPipe,
+    SharetweetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService,{provide:JWT_OPTIONS,useValue:JWT_OPTIONS},JwtHelperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

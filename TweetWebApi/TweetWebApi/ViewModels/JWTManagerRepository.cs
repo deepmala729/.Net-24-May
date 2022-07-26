@@ -1,22 +1,23 @@
-﻿using TweetWebApi.Interfaces;
-using TweetWebApi.Models;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using TweetWebApi.ViewModels;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using TweetWebApi.Models;
+using TweetWebApi.Interfaces;
 
-namespace TweetWebApi
+namespace TweetWebApi.ViewModels
 {
-    public class JWTManagerRepository : IJWTMangerRepository
+    public class JWTManagerRepository : IJWTManagerRepository
     {
         Dictionary<string, string> UserRecords;
+        private bool _isAdmin;
         private readonly IConfiguration configuration;
         private readonly TweetDBContext db;
+
 
         public bool IsRegister { get; private set; }
 
@@ -29,6 +30,10 @@ namespace TweetWebApi
         {
             if (IsRegister)
             {
+                if (db.TblLogins.Any(x => x.Email == registerViewModel.Email))
+                {
+                    return null;
+                }
                 TblLogin tblLogin = new TblLogin();
                 tblLogin.FirstName = registerViewModel.FirstName;
                 tblLogin.LastName = registerViewModel.LastName;
@@ -40,6 +45,12 @@ namespace TweetWebApi
                 db.TblLogins.Add(tblLogin);
                 db.SaveChanges();
             }
+
+            else
+            {
+                _isAdmin = db.TblLogins.Any(x => x.Email == registerViewModel.Email && x.Password == registerViewModel.Password);
+            }
+
 
             UserRecords = db.TblLogins.ToList().ToDictionary(x => x.Email, x => x.Password);
             if (!UserRecords.Any(x => x.Key == registerViewModel.Email && x.Value == registerViewModel.Password))

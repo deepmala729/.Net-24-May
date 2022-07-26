@@ -18,6 +18,7 @@ namespace TweetWebApi.Models
         }
 
         public virtual DbSet<TblLogin> TblLogins { get; set; }
+        public virtual DbSet<TblTweet> TblTweets { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -34,11 +35,9 @@ namespace TweetWebApi.Models
 
             modelBuilder.Entity<TblLogin>(entity =>
             {
-                entity.ToTable("tblLogin");
+                entity.ToTable("TblLogin");
 
                 entity.Property(e => e.ConfirmPassword).HasMaxLength(100);
-
-                entity.Property(e => e.ContactNumber).HasColumnType("numeric(10, 0)");
 
                 entity.Property(e => e.Email).HasMaxLength(100);
 
@@ -49,6 +48,23 @@ namespace TweetWebApi.Models
                 entity.Property(e => e.LoginId).HasMaxLength(100);
 
                 entity.Property(e => e.Password).HasMaxLength(100);
+            });
+
+            modelBuilder.Entity<TblTweet>(entity =>
+            {
+                entity.ToTable("TblTweet");
+
+                entity.Property(e => e.AuthorEmail).HasMaxLength(100);
+
+                entity.Property(e => e.AuthorLogo).HasMaxLength(100);
+
+                entity.Property(e => e.AuthorSlug).HasMaxLength(100);
+
+                entity.Property(e => e.TweetDescription).HasMaxLength(1000);
+
+                entity.Property(e => e.TweetImage).HasMaxLength(100);
+
+                entity.Property(e => e.TweetTime).HasMaxLength(100);
             });
 
             OnModelCreatingPartial(modelBuilder);

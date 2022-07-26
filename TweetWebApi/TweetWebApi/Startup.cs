@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TweetWebApi.Interfaces;
 using TweetWebApi.Models;
+using TweetWebApi.ViewModels;
 
 namespace TweetWebApi
 {
@@ -26,8 +28,9 @@ namespace TweetWebApi
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddDbContext<TweetDBContext>(x => x.UseSqlServer(Configuration.GetConnectionString("TweetDbConnection")));
-            services.AddTransient<IJWTMangerRepository, JWTManagerRepository>();
+            services.AddDbContext<TweetDBContext>(x => x.UseSqlServer(Configuration.GetConnectionString("TweetDBConnection")));
+            services.AddTransient<IJWTManagerRepository, JWTManagerRepository>();
+
 
             services.AddAuthentication(x =>
             {

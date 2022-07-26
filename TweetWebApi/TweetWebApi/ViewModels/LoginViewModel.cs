@@ -7,6 +7,7 @@ namespace TweetWebApi.ViewModels
 {
     public class LoginViewModel
     {
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
@@ -14,7 +15,7 @@ namespace TweetWebApi.ViewModels
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
 
-        public decimal ContactNumber { get; set; }
+        public int ContactNumber { get; set; }
 
     }
 }

@@ -9,9 +9,9 @@ export class AuthService {
   getusers() {
     throw new Error('Method not implemented.');
   }
-  private _registerUrl = "https://localhost:44312/api/Login/register";
-  private _loginUrl = "https://localhost:44312/api/Login/login";
-  private _UserUrl = "https://localhost:44312/api/Login/User"
+  private _registerUrl = "https://tweetwebapi20220725021826.azurewebsites.net/api/Login/register";
+  private _loginUrl = "https://tweetwebapi20220725021826.azurewebsites.net/api/Login/login";
+  private _UserUrl = "https://tweetwebapi20220725021826.azurewebsites.net/api/Login/User";
  
 
   constructor(private http: HttpClient, private _router:Router) { }
@@ -20,6 +20,7 @@ export class AuthService {
     return this.http.post<any>(this._registerUrl, user);
   }
   loginUser(user: any) {
+    console.log(user)
     return this.http.post<any>(this._loginUrl, user);
   }
   loggedIn()
@@ -28,11 +29,14 @@ export class AuthService {
   }
   logoutUser(){
     localStorage.removeItem('token');
-    this._router.navigate(['/home']);
+    this._router.navigate(['/login']);
   }
   getUser() {
     return this.http.get<any>(this._UserUrl)
     
+  }
+  getToken(){
+    return localStorage.getItem('token');
   }
 
 }

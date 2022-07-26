@@ -12,6 +12,8 @@ import { AuthService } from './services/auth.service';
 import { TweetComponent } from './tweet/tweet.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AccountComponent } from './account/account.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AccountComponent } from './account/account.component';
     RegisterComponent,
     TweetComponent,
     DashboardComponent,
-    AccountComponent
+    AccountComponent,
+    FilterPipe,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
